@@ -18,7 +18,7 @@ The workflow:
 4. Output predictions for compound prioritization.  
 
 <p align="center">
-  <img src="./Fig_2.png" width="800" />
+  <img src="./Fig_2.png" width="300" />
 </p>
 
 *Figure 1. MF-DNN architecture used in this study.*
