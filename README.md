@@ -46,7 +46,7 @@ Files for MF-DNN predictor
 - `main_Code.py` → Model implementation and training pipeline  
 - `decoys_scores.csv`, `top36_dataset_filtered.csv` → Training datasets  
 - `for_blind_nluc.csv` → Blind test set
-- 'unique_compounds.csv' → VS MWAC-2380, MWAC-2381 and MWAC-2384 VS analogs 
+- `unique_compounds.csv` → VS MWAC-2380, MWAC-2381 and MWAC-2384 VS analogs 
 Files as part of the Associated content for MD simulations (parameter, starting poses and representative PDB coordinates) and analysis (clustering, contacts, MM/GBSA calculations)
 - `simulation_inputs.zip` → Input files required for molecular simulations  
 
