@@ -21,7 +21,7 @@ The workflow:
   <img src="./Fig_2.png" width="300" />
 </p>
 
-*Figure 1. MF-DNN architecture used in this study.*
+*Figure 1. MF-DNN architecture used in the study:[EDIT].
 
 
 ---
