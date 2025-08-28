@@ -49,7 +49,7 @@ The workflow:
 - `unique_compounds.csv` → MWAC-2380, MWAC-2381, and MWAC-2384 virtual screening Enamine Libraries analogs  
 
 ### Files for Associated Content (Molecular Dynamics Simulations & Analysis)
-- `simulation_inputs.zip` → Input files required for molecular simulations, including:  
+- `Scripts_Input_Files_MDs.zip` → Input files required for molecular simulations, including:  
   - Parameters  
   - Starting poses  
   - Representative PDB coordinates  
