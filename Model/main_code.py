@@ -104,14 +104,12 @@ class ModelTrainer:
         loss = running_loss / len(dataloader.dataset)
         accuracy = correct / total
         return loss, accuracy        
-decoy_scores = pd.read_csv('./decoys_scores.csv')
-added_scores = pd.read_csv('./top36_dataset_filtered.csv')
-combined_scores = pd.concat([decoy_scores, added_scores])
-combined_scores_shuffled = combined_scores.sample(frac=1, random_state=seed).reset_index(drop=True)
-smiles_list = combined_scores_shuffled['SMILES'].tolist()
+decoy_scores = pd.read_csv('./dataset.csv')
+data_shuffled = decoy_scores.sample(frac=1, random_state=seed).reset_index(drop=True)
+smiles_list = data_shuffled['SMILES'].tolist()
 X_train = [Chem.CanonSmiles(smiles) if Chem.MolFromSmiles(smiles) is not None else None for smiles in smiles_list]
-y_train = combined_scores_shuffled['Actividad'].tolist()
-names_list = combined_scores_shuffled['Title'].tolist()
+y_train = data_shuffled['Actividad'].tolist()
+names_list = data_shuffled['Title'].tolist()
 dataset = MolecularDataset(X_train, names_list, y_train)
 dataloader = DataLoader(dataset, batch_size=batch_size1, shuffle=True)
 print(f"Filtered to {len(X_train)} valid train SMILES from {len(smiles_list)} total entries.")
