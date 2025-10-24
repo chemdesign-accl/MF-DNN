@@ -44,7 +44,7 @@ The workflow:
 
 ### Files for MF-DNN Predictor
 - `main_Code.py` → Model implementation and training pipeline  
-- `decoys_scores.csv`, `top36_dataset_filtered.csv` → Training datasets  
+- `dataset.csv` → Training dataset   
 - `for_blind_nluc.csv` → Blind test set  
 - `unique_compounds.csv` → MWAC-2380, MWAC-2381, and MWAC-2384 virtual screening Enamine Libraries analogs  
 
